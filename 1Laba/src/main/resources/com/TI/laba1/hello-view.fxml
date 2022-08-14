@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="480.0" style="-fx-background-color: #474747;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TI.laba1.HelloController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="15.0" prefHeight="500.0" prefWidth="440.0" style="-fx-background-color: #806E7C; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="b_decrypt" layoutX="150.0" layoutY="340.0" mnemonicParsing="false" onAction="#decrypt_text" prefHeight="10.0" prefWidth="140.0" style="-fx-background-radius: 100;" text="расшифровать" textFill="#474747">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="b_encrypt" layoutX="150.0" layoutY="300.0" mnemonicParsing="false" onAction="#crypt_text" prefHeight="10.0" prefWidth="140.0" style="-fx-background-radius: 100;" text="зашифровать" textFill="#474747">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ChoiceBox fx:id="cipher_selection" layoutX="120.0" layoutY="215.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-radius: 100;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ChoiceBox>
+            <Label layoutX="120.0" layoutY="195.0" prefHeight="20.0" prefWidth="200.0" text="выберете способ шифрования" textFill="#474747">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="b_FileChooser" layoutX="150.0" layoutY="260.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="140.0" style="-fx-background-radius: 100;" text="открыть файл" textFill="#474747">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextArea fx:id="inp_text" layoutX="10.0" layoutY="15.0" prefHeight="100.0" prefWidth="420.0" promptText="введите текст">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextArea>
+            <TextArea fx:id="inp_key" layoutX="10.0" layoutY="130.0" prefHeight="50.0" prefWidth="420.0" promptText="введите ключ">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextArea>
+            <TextArea fx:id="out_text" layoutX="10.0" layoutY="385.0" prefHeight="100.0" prefWidth="420.0" promptText="здесь будет результат">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
