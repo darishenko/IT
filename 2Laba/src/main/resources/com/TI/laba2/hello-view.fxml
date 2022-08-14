@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="1000.0" style="-fx-background-color: #474747;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TI.laba2.HelloController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="15.0" prefHeight="345.0" prefWidth="970.0" style="-fx-background-color: #806E7C; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="b_FileChooser" layoutX="360.0" layoutY="200.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="250.0" style="-fx-background-radius: 100;" text="Выбрать файл" />
+            <TextArea fx:id="input_text" editable="false" layoutX="15.0" layoutY="15.0" prefHeight="45.0" prefWidth="940.0" promptText="Содержимое выбранного файла">
+      <font>
+         <Font name="Century Gothic" size="14.0" />
+      </font>
+      </TextArea>
+            <TextArea fx:id="input_key" layoutX="15.0" layoutY="285.0" prefHeight="45.0" prefWidth="940.0" promptText="Начальное состояние регистра">
+         <font>
+         <Font name="Century Gothic" size="14.0" />
+      </font>
+      </TextArea>
+            <Button fx:id="b_encrypt" layoutX="360.0" layoutY="240.0" mnemonicParsing="false" onAction="#toEncrypt" prefHeight="25.0" prefWidth="250.0" style="-fx-background-radius: 100;" text="Запустить" />
+            <TextArea fx:id="resGen_key" editable="false" layoutX="15.0" layoutY="75.0" prefHeight="45.0" prefWidth="940.0" promptText="Сгенерированный ключ">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextArea>
+            <TextArea fx:id="out_text" editable="false" layoutX="15.0" layoutY="135.0" prefHeight="45.0" prefWidth="940.0" promptText="Результат">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </TextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
