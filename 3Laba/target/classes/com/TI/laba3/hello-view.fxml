@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="705.0" style="-fx-background-color: #8d93ab#8d93ab;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.TI.laba3.HelloController">
+   <children>
+      <AnchorPane layoutX="17.0" layoutY="14.0" prefHeight="236.0" prefWidth="672.0" style="-fx-background-color: #d6e0f0; -fx-background-radius: 10;">
+         <children>
+            <Button fx:id="b_Encrypt" layoutX="257.0" layoutY="156.0" mnemonicParsing="false" onAction="#encrypt" prefHeight="25.0" prefWidth="155.0" style="-fx-background-radius: 100; -fx-background-color: #8d93ab;" text="Шифровать" />
+            <Button fx:id="b_FileChooser" layoutX="258.0" layoutY="118.0" mnemonicParsing="false" onAction="#openFile" prefHeight="25.0" prefWidth="155.0" style="-fx-background-radius: 100; -fx-background-color: #8d93ab;" text="Выбрать файл" />
+            <BorderPane layoutX="25.0" prefHeight="78.0" prefWidth="168.0">
+               <right>
+                  <TextField fx:id="input_P" prefHeight="25.0" prefWidth="146.0" style="-fx-background-radius: 10;" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Text fill="#5b5f70" strokeType="OUTSIDE" strokeWidth="0.0" text="P" wrappingWidth="1.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </left>
+            </BorderPane>
+            <BorderPane layoutX="245.0" prefHeight="78.0" prefWidth="168.0">
+               <right>
+                  <TextField fx:id="input_Q" prefHeight="25.0" prefWidth="146.0" style="-fx-background-radius: 10;" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Text fill="#5b5f70" strokeType="OUTSIDE" strokeWidth="0.0" text="Q" wrappingWidth="1.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </left>
+            </BorderPane>
+            <BorderPane layoutX="475.0" prefHeight="78.0" prefWidth="168.0">
+               <right>
+                  <TextField fx:id="input_B" prefHeight="25.0" prefWidth="146.0" style="-fx-background-radius: 10;" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Text fill="#5b5f70" strokeType="OUTSIDE" strokeWidth="0.0" text="B" wrappingWidth="1.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </left>
+            </BorderPane>
+            <Button fx:id="b_Decrypt" layoutX="258.0" layoutY="196.0" mnemonicParsing="false" onAction="#decrypt" prefHeight="25.0" prefWidth="155.0" style="-fx-background-radius: 100; -fx-background-color: #8d93ab;" text="Расшифровать" />
+            <Label fx:id="Lbl_Nvalue" layoutX="296.0" layoutY="71.0" prefHeight="32.0" prefWidth="117.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Text fill="#5b5f70" layoutX="239.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" N =" wrappingWidth="50.000005086263">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="17.0" layoutY="279.0" prefHeight="165.0" prefWidth="672.0" style="-fx-background-color: #d6e0f0; -fx-background-radius: 10;">
+         <children>
+            <TextArea fx:id="out_File" layoutX="7.0" layoutY="34.0" prefHeight="122.0" prefWidth="657.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="14.0" layoutY="14.0" text="Выбранный файл">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="17.0" layoutY="457.0" prefHeight="165.0" prefWidth="672.0" style="-fx-background-color: #d6e0f0; -fx-background-radius: 10;">
+         <children>
+            <TextArea fx:id="out_Result" layoutX="7.0" layoutY="35.0" prefHeight="122.0" prefWidth="657.0" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="14.0" layoutY="19.0" text="Результат">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
